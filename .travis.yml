@@ -1,9 +1,13 @@
-sudo: false
 language: python
+os:
+  - linux
+dist:
+  - trusty
+  - precise
+  - xenial
+  - bionic
 python:
   - "2.7"
-  - "3.3"
-  - "3.4"
   - "3.5"
   - "3.6"
   - "3.7"
