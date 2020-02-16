@@ -1,8 +1,5 @@
 language: python
-os:
-  linux
-  osx
-  windows
+os: linux
 python:
   - "2.7"
   - "3.5"
@@ -12,11 +9,13 @@ python:
 jobs:
   include:
     - os: linux
-      dist:
-        - trusty
-        - precise
-        - xenial
-        - bionic
+      dist: trusty
+    - os: linux
+      dist: precise
+    - os: linux
+      dist: xenial
+    - os: linux
+      dist: bionic
 install:
   - pip install six blist unittest2 pytz
   - python setup.py install
