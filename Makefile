@@ -7,3 +7,4 @@ help:
 
 clean:
 	python setup.py clean
+	cd lib; make clean
